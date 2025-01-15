@@ -1,4 +1,5 @@
 import React from "react";  // 1 Importar React
+import { BtnCallToAction } from "./BtnCallToAction.jsx";
 
 
 // 2 Crear el componente
@@ -35,7 +36,7 @@ const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex" role="search">
-              <button className="btn btn-outline-success" type="submit">Search</button>
+              <BtnCallToAction />
           </form>
         </div>
       </div>
