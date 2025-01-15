@@ -4,6 +4,8 @@ import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bu
 import Navbar from "./Navbar.jsx";  // Componente con export default
 import { Footer } from "./Footer.jsx";  // Componente con export const
 import { Jumbotron } from "./Jumbotron.jsx";
+import { Alert } from "./Alert.jsx";
+import { Spinner } from "./Spinner.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -14,6 +16,8 @@ const Home = () => {
 	return (
 			<div className="text-center">
 				<Navbar />
+				<Alert />
+				<Spinner />
 				<h1 className="text-center mt-5">{'Intro React'}</h1>
 				<Jumbotron />
 				{/* 
