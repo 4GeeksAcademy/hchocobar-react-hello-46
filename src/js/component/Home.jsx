@@ -6,6 +6,8 @@ import { Footer } from "./Footer.jsx";  // Componente con export const
 import { Jumbotron } from "./Jumbotron.jsx";
 import { Alert } from "./Alert.jsx";
 import { Spinner } from "./Spinner.jsx";
+import { Card } from "./Card.jsx";
+import { Title } from "./Title.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -18,8 +20,20 @@ const Home = () => {
 				<Navbar />
 				<Alert />
 				<Spinner />
-				<h1 className="text-center mt-5">{'Intro React'}</h1>
-				<Jumbotron />
+
+				<Title />
+				<Title text='Subtitulo' />
+				<Title text='otro titulo' color='success' />
+
+				
+				
+				<Card 
+						title='Tamara Bates' 
+				    imageURL='https://randomuser.me/api/portraits/women/43.jpg'
+				/>
+				<Card/>
+
+				{/* <Jumbotron /> */}
 				{/* 
 				<p>
 					<img src={rigoImage} />
