@@ -8,6 +8,7 @@ import { Alert } from "./Alert.jsx";
 import { Spinner } from "./Spinner.jsx";
 import { Card } from "./Card.jsx";
 import { Title } from "./Title.jsx";
+import { ExampleState } from "./ExampleState.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -21,12 +22,12 @@ const Home = () => {
 				<Alert />
 				<Spinner />
 				<Title text='Hooks - useState()' color='success' />
+				<ExampleState />
 
 				{/* 
 				<Title />
 				<Title text='Subtitulo' />
 				 */}
-				
 				{/* 
 				<Card 
 						title='Tamara Bates' 
@@ -41,7 +42,6 @@ const Home = () => {
 					If you see this green button... bootstrap is working...
 				</a>
 				*/}
-
 				<Footer/>
 			</div>
 	);
