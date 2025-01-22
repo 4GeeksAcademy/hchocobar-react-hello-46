@@ -9,6 +9,7 @@ import { Spinner } from "./Spinner.jsx";
 import { Card } from "./Card.jsx";
 import { Title } from "./Title.jsx";
 import { ExampleState } from "./ExampleState.jsx";
+import { SimpleCounter } from "./SimpleCounter.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -21,9 +22,10 @@ const Home = () => {
 				<Navbar />
 				<Alert />
 				<Spinner />
-				<Title text='Hooks - useState()' color='success' />
-				<ExampleState />
+				<Title text='Hooks - useEffect()' color='danger' />	
+				<SimpleCounter />
 
+				{/* <ExampleState /> */}
 				{/* 
 				<Title />
 				<Title text='Subtitulo' />

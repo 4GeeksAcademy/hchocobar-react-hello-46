@@ -10,6 +10,7 @@ export const ExampleState = () => {
   const [ text, setText ] = useState('Hola Mundo');
   const [ counter, setCounter] = useState(0);
   const [ background, setBackground ] = useState('warning')
+  const [ view, setView ] = useState('')
   
   const initialise = () => {
     setText('Hola Mundo');  // opción 1 (correcta)
@@ -27,13 +28,13 @@ export const ExampleState = () => {
   // 4
   return (
     <div className="container">
-      <div className={`alert alert-${background}`} role="alert">
+      <div className={`alert alert-${background} ${view}`} role="alert">
         {counter} - {text}
       </div>
       <button onClick={initialise} type="button" className="btn btn-primary">Valores iniciales</button>
       <button onClick={() => setText(text.toUpperCase())} type="button" className="btn btn-secondary">Mayúsculas</button>
       <button onClick={() => setText(text.toLowerCase())} type="button" className="btn btn-success">Minúsculas</button>
-      <div className={`alert alert-${background} mt-2`} role="alert">
+      <div className={`alert alert-${background} ${view} mt-2`} role="alert">
         {counter}
       </div>
       <button onClick={() => setCounter(counter + 1) } type="button" className="btn btn-danger">Incrementar</button>
@@ -44,7 +45,9 @@ export const ExampleState = () => {
       <button onClick={() => setBackground('primary')} type="button" className="btn btn-primary">Azul</button>
       <button onClick={() => setBackground('success')} type="button" className="btn btn-success">Verde</button>
       <button onClick={() => setBackground('danger')} type="button" className="btn btn-danger">Rojo</button>
-      <button onClick={() => setBackground(' d-none')} type="button" className="btn btn-dark">Ocultar</button>
+      <hr/>
+      <button onClick={() => setView('')} type="button" className="btn btn-info">Mostrar</button>
+      <button onClick={() => setView('d-none')} type="button" className="btn btn-dark">Ocultar</button>
 
     </div>
   )
