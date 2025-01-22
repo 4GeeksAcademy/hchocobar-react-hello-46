@@ -8,7 +8,7 @@ export const Footer = () => {
 
   // 4 Return un elemento HTML
   return (
-    <div className="container">
+    <div className="container mt-auto">
       <hr />
       <p className="text-small">
         <span>Made by </span>

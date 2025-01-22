@@ -10,6 +10,7 @@ import { Card } from "./Card.jsx";
 import { Title } from "./Title.jsx";
 import { ExampleState } from "./ExampleState.jsx";
 import { SimpleCounter } from "./SimpleCounter.jsx";
+import { TrafficLight } from "./TrafficLight.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -18,12 +19,13 @@ const Home = () => {
 
 	// 4. Retorno un solo y solo un elemento HTML
 	return (
-			<div className="text-center">
+			<div className="text-center d-flex flex-column min-vh-100">
 				<Navbar />
 				<Alert />
 				<Spinner />
-				<Title text='Hooks - useEffect()' color='danger' />	
-				<SimpleCounter />
+				<Title text='Hooks - useEffect()' color='primary' />
+				<TrafficLight />
+				{/* <SimpleCounter /> */}
 
 				{/* <ExampleState /> */}
 				{/* 

@@ -13,3 +13,26 @@
     padding: 10px;
     margin: 3px;
 }
+
+
+/* Traffic Lilght */
+.glow-red {
+    box-shadow: 0px 0px 9px 4px red;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+.glow-yellow {
+    box-shadow: 0px 0px 9px 4px yellow;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+.glow-green {
+    box-shadow: 0px 0px 9px 4px green;
+    animation: glow 0.8s linear infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px yellowgreen;
+    }
+}
