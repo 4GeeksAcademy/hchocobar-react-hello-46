@@ -11,6 +11,7 @@ import { Title } from "./Title.jsx";
 import { ExampleState } from "./ExampleState.jsx";
 import { SimpleCounter } from "./SimpleCounter.jsx";
 import { TrafficLight } from "./TrafficLight.jsx";
+import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -23,8 +24,9 @@ const Home = () => {
 				<Navbar />
 				<Alert />
 				<Spinner />
-				<Title text='Hooks - useEffect()' color='primary' />
-				<TrafficLight />
+				<Title text='Forms' color='primary' />
+				<ExampleControlledInputs />
+				{/* <TrafficLight /> */}
 				{/* <SimpleCounter /> */}
 
 				{/* <ExampleState /> */}
