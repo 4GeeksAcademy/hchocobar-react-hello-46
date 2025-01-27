@@ -36,3 +36,13 @@
         box-shadow: 0px 0px 30px 20px yellowgreen;
     }
 }
+
+/* Todo List */
+.hidden-icon > span {
+    visibility: hidden;
+}
+
+/* Muestra el icono cuando el cursor pase por encima del li */
+.hidden-icon:hover > span {
+    visibility: visible;
+}
