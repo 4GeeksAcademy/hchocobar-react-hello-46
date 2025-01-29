@@ -13,6 +13,8 @@ import { SimpleCounter } from "./SimpleCounter.jsx";
 import { TrafficLight } from "./TrafficLight.jsx";
 import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
 import { TodoList } from "./TodoList.jsx";
+import { ExampleFetch } from "./ExampleFetch.jsx";
+import { ExampleFetchComplex } from "./ExampleFetchComplex.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -26,7 +28,9 @@ const Home = () => {
 				<Alert />
 				<Spinner />
 				{/* <Title text='Forms' color='primary' /> */}
-				<TodoList />
+				<ExampleFetchComplex />
+				{/* <ExampleFetch /> */}
+				{/* <TodoList /> */}
 				{/* <ExampleControlledInputs /> */}
 				{/* <TrafficLight /> */}
 				{/* <SimpleCounter /> */}
