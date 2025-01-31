@@ -15,6 +15,7 @@ import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
 import { TodoList } from "./TodoList.jsx";
 import { ExampleFetch } from "./ExampleFetch.jsx";
 import { ExampleFetchComplex } from "./ExampleFetchComplex.jsx";
+import { TodoListFetch } from "./TodoListFetch.jsx";
 
 
 // 2. Create your first component with PascalCase name.
@@ -28,7 +29,8 @@ const Home = () => {
 				<Alert />
 				<Spinner />
 				{/* <Title text='Forms' color='primary' /> */}
-				<ExampleFetchComplex />
+				<TodoListFetch/>
+				{/* <ExampleFetchComplex /> */}
 				{/* <ExampleFetch /> */}
 				{/* <TodoList /> */}
 				{/* <ExampleControlledInputs /> */}
